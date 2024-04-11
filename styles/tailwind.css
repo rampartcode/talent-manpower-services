@@ -1,0 +1,37 @@
+@import "./fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .custom-shadow {
+    box-shadow: 0 4px 10px #83d2d83f;
+  }
+
+  .hero-shadow {
+    box-shadow: 0 0 20px #83d2d856;
+  }
+
+  .glass {
+    background-image: url('../assets/svgs/glass.svg');
+    @apply bg-center bg-cover bg-no-repeat;
+  }
+}
+
+html {
+  background-color: #FDFEFD;
+}
+
+body {
+  @apply font-roobert text-neutral-900;
+}
+
+.estatisticas {
+  background-image: url('../assets/imgs/estatisticas.jpg');
+  @apply min-h-[350px] h-full w-full bg-fixed bg-no-repeat bg-cover bg-center;
+}
+
+.card-shadow {
+  box-shadow: 0 0 30px #83d2d86a;
+}

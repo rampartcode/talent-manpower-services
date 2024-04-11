@@ -1,7 +1,19 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+definePageMeta({
+  middleware: []
+})
+</script>
 
 <template>
-  <section>
-    <h1>INDEX</h1>
-  </section>
+  <ui-header />
+  <hero />
+  <home-about />
+  <home-estatisticas />
+  <home-filosofia />
+  <home-servicos />
+  <home-vagas />
+  <home-faq />
+  <home-testemunhas />
+  <home-parceiros />
+  <ui-footer />
 </template>

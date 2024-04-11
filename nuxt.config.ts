@@ -1,9 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  app: {   
+  app: {
     head: {
-      title: "Talent Manpower Services"
-    }
-  }
-})
+      title: "Talent Manpower Services",
+    },
+  },
+  css: ["@/styles/tailwind.css"],
+  modules: [
+    "@vueuse/nuxt",
+    "@pinia/nuxt",
+    "nuxt-icon",
+    "@nuxtjs/tailwindcss",
+    "nuxt-security"
+  ],
+});

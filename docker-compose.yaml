@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: bitnami/postgresql:latest
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=tmps
+      - POSTGRES_PASSWORD=tmps
+      - POSTGRES_DB=tmps
+    volumes:
+      - tmps_pg_data:/bitnami/postgresql
+
+volumes:
+  tmps_pg_data:
